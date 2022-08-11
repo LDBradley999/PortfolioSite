@@ -95,19 +95,50 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+:root {
+    --bg1: #F0EBE3;
+    --bg2: #E4DCCF;
+    --content1: #7D9D9C;
+    --content2: #576F72;
+    --content3: #3F4E4F;
+    --content4: #2C3639;
+    --content5: #DCD7C9;
+}
+
+a:link {
+    color: black;
+}
+
+a:hover {
+    color: var(--content3);
+}
+
+a:active {
+    color: var(--content3);
+}
+
+a:visited {
+    color: black;
+}
+
+body {
+    background: var(--bg2);
+}
+
 .siteheader-box {
     
-    /* Start debug stuff */
+    /* Start debug stuff 
     
     border-style: dashed;
     border-color: red;
     border-width: 2px;
     border-radius: 3px;
     
-    background-color: lightcoral;
+    background-color: var(--primary);
     
-    /* End debug stuff */
+     End debug stuff */
     
+    background-color: var(--bg1);
     position: fixed;
     display: table;
     z-index: 3;
@@ -123,19 +154,20 @@ textarea {
 
 .contact-info-box {
     
-    /* Start debug stuff */
+    /* Start debug stuff 
     
     border-style: dashed;
     border-color: black;
     border-width: 2px;
     border-radius: 3px;
     
-    /* End debug stuff */
+     End debug stuff */
     
     position: fixed;
     display: table;
     z-index: 4;
     font-family: 'Source Sans Pro', sans-serif;
+    color: var(--analog1);
     justify-content: center;
     vertical-align: middle;
     text-align: center;
@@ -158,7 +190,7 @@ textarea {
 
 .navbar-box {
     
-    /* Start debug stuff */
+    /* Start debug stuff
     
     border-style: dashed;
     border-color: darkgreen;
@@ -167,8 +199,12 @@ textarea {
     
     background-color: aquamarine;
     
-    /* End debug stuff */
+    End debug stuff */
     
+    background-color: var(--content1);
+    display: table;
+    vertical-align: middle;
+    text-align: left;
     position: fixed;
     z-index: 2;
     justify-content: center;
@@ -179,9 +215,24 @@ textarea {
     box-shadow: 2px 2px 5px black;
 }
 
+.nav-table {
+    display: table;
+    vertical-align: middle;
+    align-content: center;
+    margin-top: 10px;
+}
+
+.nav-link {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 10px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700;
+}
+
 .content-text-box {
     
-    /* Start debug stuff */
+    /* Start debug stuff 
     
     border-style: dashed;
     border-color: blue;
@@ -190,9 +241,11 @@ textarea {
     
     background-color: lightblue;
     
-    /* End debug stuff */
+     End debug stuff */
     
+    background-color: var(--bg2);
     position: absolute;
+    z-index: 0;
     width: 70%;
     height: 100%;
     top: 15%;
@@ -200,7 +253,7 @@ textarea {
 }
 
 .content-media-box {
-   /* Start debug stuff */
+   /* Start debug stuff 
     
     border-style: dashed;
     border-color: black;
@@ -209,13 +262,20 @@ textarea {
     
     background-color: gray;
     
-    /* End debug stuff */
+     End debug stuff */
     
+   background-color: var(--content3);
     position: absolute;
+    z-index: 1;
     width: 20%;
     height: 100%;
     top: 15%;
     left: 80%;
+    padding-top: 5%;
+    text-align: center;
+    justify-content: center;
+    
+    box-shadow: -3px 2px 5px black;
 }
 
 .siteheadertable {
@@ -232,6 +292,7 @@ textarea {
   font-size: 3em; 
   line-height: 1.58;
   letter-spacing: .2em;
+  color: var(--complementary);
 }
 
 .sitesubheader {
@@ -241,9 +302,11 @@ textarea {
   font-weight: 600;
   font-size: 1em;
   letter-spacing: .03em;
+  color: var(--analog2);
 }
 
 .content-header {
+    color: var(--content3);
     font-family: 'Source Sans Pro', sans-serif;
     padding-top: 20px;
     padding-left: 60px;
@@ -254,25 +317,48 @@ textarea {
 }
 
 .content-text {
+    color: var(--content3);
     font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.1em;
     padding-left: 30px;
     padding-right: 30px;
     line-height: 1.8;
 }
 
-.poloroid {
-    
+.poloroid a {
+    background: #ffffff;
+    display: inline-block;
+    padding: 15px 15px 10px;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+    transition: all .20s linear;
+    z-index: 2;
+    position: relative;
 }
 
-.poloroid-img {
-    
+.poloroid a: after {
+    color: #333;
+    font-size: 25px;
+    content: attr(title);
+    position: relative;
+    top: 15px;
 }
 
-.poloroid-desc {
-    
+.poloroid img {
+    display: block;
+    width: 250px;
 }
 
+.poloroid p {
+    font-family: 'Source Sans Pro', sans-serif;
+}
 
+.poloroid a: hover {
+    transform: scale(1.2);
+    z-index: 10;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7)
+}
 
 
 

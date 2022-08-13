@@ -173,9 +173,10 @@ body {
     text-align: center;
     padding-left: 10px;
     padding-right: 10px;
-    width: 20%;
+    width: 100%;
     height: 15%;
     left: 80%;
+    overflow-wrap: break-word;
 }
 
 .contact-info-table {
@@ -201,7 +202,7 @@ body {
     
     End debug stuff */
     
-    background-color: var(--content1);
+    background-color: var(--content4);
     display: table;
     vertical-align: middle;
     text-align: left;
@@ -219,6 +220,8 @@ body {
     display: table;
     vertical-align: middle;
     align-content: center;
+    width: 90%;
+    margin-right: auto;
     margin-top: 10px;
 }
 
@@ -228,6 +231,18 @@ body {
     padding: 10px;
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 700;
+    color: var(--bg2);
+}
+
+#nav-selected {
+    background: var(--content2);
+}
+
+.nav-link a {
+    text-decoration: none;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700;
+    color: var(--bg2);
 }
 
 .content-text-box {
@@ -271,7 +286,7 @@ body {
     height: 100%;
     top: 15%;
     left: 80%;
-    padding-top: 5%;
+    padding-top: 20px;
     text-align: center;
     justify-content: center;
     
@@ -319,16 +334,21 @@ body {
 .content-text {
     color: var(--content3);
     font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 500;
     font-size: 1.1em;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 60px;
+    padding-right: 90px;
     line-height: 1.8;
 }
 
 .poloroid a {
-    background: #ffffff;
+    background: var(--bg1);
     display: inline-block;
     padding: 15px 15px 10px;
+    margin-top: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+    justify-content: center;
     text-align: center;
     text-decoration: none;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
@@ -337,27 +357,15 @@ body {
     position: relative;
 }
 
-.poloroid a: after {
-    color: #333;
-    font-size: 25px;
-    content: attr(title);
-    position: relative;
-    top: 15px;
-}
-
 .poloroid img {
     display: block;
-    width: 250px;
+    max-width: 95%;
+    height: auto;
+    margin: auto;
 }
 
 .poloroid p {
     font-family: 'Source Sans Pro', sans-serif;
-}
-
-.poloroid a: hover {
-    transform: scale(1.2);
-    z-index: 10;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7)
 }
 
 

@@ -262,7 +262,8 @@ body {
     position: absolute;
     z-index: 0;
     width: 70%;
-    height: 100%;
+    height: auto;
+    padding-bottom: 50px;
     top: 15%;
     left: 10%;
 }
@@ -287,8 +288,30 @@ body {
     top: 15%;
     left: 80%;
     padding-top: 20px;
+    padding-bottom: 50px;
     text-align: center;
     justify-content: center;
+}
+
+.content-media-bg {
+   /* Start debug stuff 
+    
+    border-style: dashed;
+    border-color: black;
+    border-width: 2px;
+    border-radius: 3px;
+    
+    background-color: gray;
+    
+     End debug stuff */
+    
+   background-color: var(--content3);
+    position: fixed;
+    z-index: 0;
+    width: 20%;
+    height: 85%;
+    top: 15%;
+    left: 80%;
     
     box-shadow: -3px 2px 5px black;
 }
@@ -339,6 +362,14 @@ body {
     padding-left: 60px;
     padding-right: 90px;
     line-height: 1.8;
+}
+
+.example {
+    align-self: center;
+    margin-left: 5%;
+    margin-bottom: 50px;
+    width: 90%;
+    height: 500px;
 }
 
 .poloroid a {

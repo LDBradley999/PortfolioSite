@@ -400,7 +400,7 @@ body {
 }
 
 .education-box {
-    margin: 10px 2.5% 10px;
+    margin: 20px 2.5% 10px;
     padding-top: 10px;
     padding-bottom: 10px;
     background: var(--content4);
@@ -417,6 +417,7 @@ body {
 .education-box p {
     font-size: 0.9em;
     margin-left: 20px;
+    margin-right: 20px;
     color: var(--bg1);
 }
 

@@ -399,6 +399,45 @@ body {
     font-family: 'Source Sans Pro', sans-serif;
 }
 
+.education-box {
+    margin: 10px 2.5% 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: var(--content4);
+    color: var(--bg1);
+    border-radius: 5px;
+}
+
+.education-box h2 {
+    font-size: 1.3em;
+    margin-left: 10px;
+    color: var(--bg1);
+}
+
+.education-box p {
+    font-size: 0.9em;
+    margin-left: 20px;
+    color: var(--bg1);
+}
+
+.rig-list {
+    margin: 10px 5% 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: var(--content4);
+    color: var(--bg1);
+    border-radius: 5px;
+    
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.2em; 
+}
+
+.rig-sublist {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 0.9em;
+}
+
+
 
 
 

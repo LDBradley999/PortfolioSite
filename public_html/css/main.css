@@ -144,8 +144,8 @@ body {
     z-index: 3;
     justify-content: center;
     text-align: center;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 1%;
+    padding-right: 1%;
     width: 100%;
     height: 15%;
     
@@ -154,14 +154,14 @@ body {
 
 .contact-info-box {
     
-    /* Start debug stuff 
+    /* Start debug stuff
     
     border-style: dashed;
     border-color: black;
     border-width: 2px;
     border-radius: 3px;
     
-     End debug stuff */
+    End debug stuff */
     
     position: fixed;
     display: table;
@@ -171,11 +171,11 @@ body {
     justify-content: center;
     vertical-align: middle;
     text-align: center;
-    padding-left: 10px;
-    padding-right: 10px;
-    width: 100%;
+    padding-left: 1%;
+    padding-right: 1%;
+    width: auto;
     height: 15%;
-    left: 80%;
+    right: 0;
     overflow-wrap: break-word;
 }
 
@@ -186,7 +186,7 @@ body {
 
 .contact-info-cell {
     text-align: left;
-    padding: 5px;
+    padding: 0.4em;
 }
 
 .navbar-box {
@@ -222,13 +222,13 @@ body {
     align-content: center;
     width: 90%;
     margin-right: auto;
-    margin-top: 10px;
+    margin-top: 5%;
 }
 
 .nav-link {
     display: table-cell;
     vertical-align: middle;
-    padding: 10px;
+    padding: 5%;
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 700;
     color: var(--bg2);
@@ -263,7 +263,7 @@ body {
     z-index: 0;
     width: 70%;
     height: auto;
-    padding-bottom: 50px;
+    padding-bottom: 10%;
     top: 15%;
     left: 10%;
 }
@@ -287,8 +287,8 @@ body {
     height: 100%;
     top: 15%;
     left: 80%;
-    padding-top: 20px;
-    padding-bottom: 50px;
+    padding-top: 2%;
+    padding-bottom: 5%;
     text-align: center;
     justify-content: center;
 }
@@ -319,7 +319,7 @@ body {
 .siteheadertable {
   display: table-cell;
   vertical-align: middle;
-  padding-left: 50px;
+  padding-left: 2%;
 }
 
 .siteheader{
@@ -346,8 +346,8 @@ body {
 .content-header {
     color: var(--content3);
     font-family: 'Source Sans Pro', sans-serif;
-    padding-top: 20px;
-    padding-left: 60px;
+    padding-top: 1em;
+    padding-left: 2em;
     font-size: 2em;
     font-weight: 700;
     line-height: 1.58;
@@ -359,8 +359,8 @@ body {
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 500;
     font-size: 1.1em;
-    padding-left: 60px;
-    padding-right: 90px;
+    padding-left: 3.5em;
+    padding-right: 4em;
     line-height: 1.8;
 }
 

@@ -147,7 +147,7 @@ body {
     padding-left: 1%;
     padding-right: 1%;
     width: 100%;
-    height: 15%;
+    height: 8em;
     
     box-shadow: 0px 4px 8px black;
 }
@@ -177,6 +177,19 @@ body {
     height: 15%;
     right: 0;
     overflow-wrap: break-word;
+}
+
+.contact-info-box-mobile {
+    display: none;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: var(--analog1);
+    justify-content: center;
+    vertical-align: middle;
+    text-align: center;
+    padding-left: 1%;
+    padding-right: 1%;
+    width: auto;
+    height: 15%;
 }
 
 .contact-info-table {
@@ -618,4 +631,103 @@ body {
     h3 {
         page-break-after: avoid;
     }
+}
+
+@media all and (min-width:0px) and (max-width: 1024px) {
+    .siteheader-box {
+        height: 15%;
+    }
+    .siteheader {
+        font-size: 2em;
+    }
+    .sitesubheader {
+        font-size: 0.67em;
+    }
+    .contact-info-box {
+        display: none;
+    }
+    .contact-info-box-mobile {
+        display: table;
+    }
+    .content-media-bg {
+        display: none;
+    }
+    .content-media-box {
+        display: none;
+    }
+    .navbar-box {
+        width: 10%;
+        padding-right: 2%;
+    }
+    .nav-link {
+        font-size: 0.75em;
+        padding-top: 15%;
+    }
+    .content-text-box {        
+        background-color: var(--bg2);
+        position: absolute;
+        z-index: 0;
+        width: auto;
+        height: auto;
+        padding-bottom: 10%;
+        top: 15%;
+        left: 20%;
+    }
+    .content-text {
+        font-size: 0.9em;
+    }
+    .content-header {
+        font-size: 1em;
+    }
+    .education-box {
+        margin: 10% 2.5% 20%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background: var(--content4);
+        color: var(--bg1);
+        border-radius: 5px;
+    }
+    .education-box h2 {
+        font-size: 1em;
+    }
+    
+    /*
+    .contact-info-box {
+    
+    /* Start debug stuff
+    
+    border-style: dashed;
+    border-color: black;
+    border-width: 2px;
+    border-radius: 3px;
+    
+    End debug stuff */
+    /*
+    position: fixed;
+    display: table;
+    z-index: 4;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 0.75em;
+    color: var(--analog1);
+    justify-content: center;
+    vertical-align: middle;
+    text-align: center;
+    padding-left: 1%;
+    padding-right: 1%;
+    width: 50%;
+    height: 15%;
+    right: 0;
+    overflow-wrap: break-word;
+    }
+
+    .contact-info-table {
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+    .contact-info-cell {
+        text-align: left;
+        padding: 0.4em;
+    }
+    */
 }

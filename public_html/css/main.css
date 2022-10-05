@@ -147,7 +147,7 @@ body {
     padding-left: 1%;
     padding-right: 1%;
     width: 100%;
-    height: 8em;
+    height: 10em;
     
     box-shadow: 0px 4px 8px black;
 }
@@ -181,6 +181,7 @@ body {
 
 .contact-info-box-mobile {
     display: none;
+    visibility: hidden;
     font-family: 'Source Sans Pro', sans-serif;
     color: var(--analog1);
     justify-content: center;
@@ -224,7 +225,7 @@ body {
     justify-content: center;
     width: 10%;
     height: 85%;
-    top: 15%;  
+    top: 10em;  
     
     box-shadow: 2px 2px 5px black;
 }
@@ -633,7 +634,7 @@ body {
     }
 }
 
-@media all and (min-width:0px) and (max-width: 1024px) {
+@media all and (min-width:0px) and (max-width: 780px) {
     .siteheader-box {
         height: 15%;
     }

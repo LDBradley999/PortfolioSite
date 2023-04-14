@@ -171,10 +171,10 @@ body {
     justify-content: center;
     vertical-align: middle;
     text-align: center;
+    margin-top: 1%;
     padding-left: 1%;
     padding-right: 1%;
     width: auto;
-    height: 15%;
     right: 0;
     overflow-wrap: break-word;
 }
@@ -224,7 +224,7 @@ body {
     z-index: 2;
     justify-content: center;
     width: 10%;
-    height: 85%;
+    height: 100%;
     top: 10em;  
     
     box-shadow: 2px 2px 5px black;
@@ -299,7 +299,7 @@ body {
     z-index: 1;
     width: 20%;
     height: 100%;
-    top: 15%;
+    top: 10em;
     left: 80%;
     padding-top: 2%;
     padding-bottom: 5%;
@@ -324,7 +324,7 @@ body {
     z-index: 0;
     width: 20%;
     height: 85%;
-    top: 15%;
+    top: 10em;
     left: 80%;
     
     box-shadow: -3px 2px 5px black;
@@ -420,6 +420,45 @@ body {
     background: var(--content4);
     color: var(--bg1);
     border-radius: 5px;
+}
+
+.comment-box {
+    margin: 20px 2.5% 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: var(--content4);
+    color: var(--bg1);
+    border-radius: 5px;
+}
+
+.comment-box h2 {
+    margin-left: 5%;
+    font-size: .95em;
+    color: var(--content2);
+}
+
+.comment-box p {
+    margin-left: 2%;
+    font-size: 1em;
+    color: var(--bg1);
+}
+
+.comment-form {
+    margin: 20px 2.5% 10px;
+    padding-top: 1%;
+    padding-bottom: 2%;
+    padding-left: 2%;
+    color: var(--content2);
+    outline: solid;
+    outline-width: 1px;
+    outline-color: var(--content4);
+    border-radius: 5px;
+}
+
+#message {
+    width: 95%;
+    margin-left: auto;
+    margin-bottom: 2%;
 }
 
 .education-box h2 {

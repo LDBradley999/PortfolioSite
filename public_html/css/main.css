@@ -181,7 +181,6 @@ body {
 
 .contact-info-box-mobile {
     display: none;
-    visibility: hidden;
     font-family: 'Source Sans Pro', sans-serif;
     color: var(--analog1);
     justify-content: center;
@@ -687,7 +686,10 @@ body {
         display: none;
     }
     .contact-info-box-mobile {
-        display: table;
+        display: block;
+        z-index: 4;
+        padding-top: 5%;
+        margin-left: 10%;
     }
     .content-media-bg {
         display: none;
@@ -696,6 +698,7 @@ body {
         display: none;
     }
     .navbar-box {
+        top: 15%;
         width: 10%;
         padding-right: 2%;
     }
